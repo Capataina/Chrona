@@ -1,0 +1,12 @@
+.cursor/
+
+build/
+*.exe
+*.obj
+*.o
+*.lib
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
