@@ -1,5 +1,7 @@
 .cursor/
 
+.cache/
+
 build/
 *.exe
 *.obj
