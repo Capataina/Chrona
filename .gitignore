@@ -12,3 +12,5 @@ build/
 *.dylib
 *.a
 *.lib
+
+claude.md
