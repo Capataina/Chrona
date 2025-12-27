@@ -1,6 +1,3 @@
-#ifndef CHRONA_ERRORS_ERROR_HPP
-#define CHRONA_ERRORS_ERROR_HPP
-
 #include <iostream>
 #include <optional>
 
@@ -35,5 +32,3 @@ void exit_with_error(const Error &error,
                      int exit_code = static_cast<int>(ExitCode::GeneralError));
 
 } // namespace chrona
-
-#endif // CHRONA_ERRORS_ERROR_HPP

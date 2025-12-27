@@ -122,16 +122,16 @@ This milestone is prerequisite for Milestone 1 (object store), which will need r
 
 ### Step 3: Basic error model
 
-- [ ] Create `src/error.h` with error types/codes enum
-- [ ] Create `src/error.cpp` with error message formatting
-- [ ] Define exit code constants (0, 1, 2)
+- [x] Create `src/error.h` with error types/codes enum
+- [x] Create `src/error.cpp` with error message formatting
+- [x] Define exit code constants (0, 1, 2)
 - **Verification:** Can create and format errors, exit codes are consistent
 
 ### Step 4: Repo discovery (no init yet)
 
-- [ ] Create `src/repo.h` with `find_repo(std::filesystem::path)` function
-- [ ] Create `src/repo.cpp` implementing directory walk-up logic
-- [ ] Return optional path or "not found" state
+- [x] Create `src/repo.h` with `find_repo(std::filesystem::path)` function
+- [x] Create `src/repo.cpp` implementing directory walk-up logic
+- [x] Return optional path or "not found" state
 - **Verification:** Unit test: finds repo when `.chrona/` exists in parent, returns not-found otherwise
 
 ### Step 5: CLI scaffolding (argument parsing)

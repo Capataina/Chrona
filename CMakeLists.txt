@@ -17,14 +17,21 @@ FetchContent_MakeAvailable(Catch2)
 add_executable(chrona
   src/main.cpp
   src/errors/error.cpp
+  src/repo/repo.cpp
+  src/cli/cli.cpp
 )
 
 target_compile_features(chrona PRIVATE cxx_std_20)
 
 # Test executable - compile source files directly, don't link the main executable
 add_executable(chrona_tests
-  tests/test_errors.cpp
-  src/errors/error.cpp  # Include source files you want to test
+  src/repo/repo.cpp
+  src/errors/error.cpp
+  src/cli/cli.cpp
+
+  # tests/test_errors.cpp
+  # tests/test_repo.cpp
+  tests/test_cli.cpp
 )
 
 target_compile_features(chrona_tests PRIVATE cxx_std_20)
