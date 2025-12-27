@@ -136,17 +136,17 @@ This milestone is prerequisite for Milestone 1 (object store), which will need r
 
 ### Step 5: CLI scaffolding (argument parsing)
 
-- [ ] Create `src/cli.h` with command enum and argument structure
-- [ ] Create `src/cli.cpp` with `parse_args(int argc, char* argv[])` function
-- [ ] Handle: no args, `--help`, `<command>` cases
-- [ ] Return parsed command or error
+- [x] Create `src/cli.h` with command enum and argument structure
+- [x] Create `src/cli.cpp` with `parse_args(int argc, char* argv[])` function
+- [x] Handle: no args, `--help`, `<command>` cases
+- [x] Return parsed command or error
 - **Verification:** Unit test: parses known commands, rejects unknown, handles `--help`
 
 ### Step 6: Help/usage output
 
-- [ ] Add `print_usage()` function to `src/cli.cpp`
-- [ ] Show available commands and basic usage
-- [ ] Integrate into main: no args → help, `--help` → help
+- [x] Add `print_usage()` function to `src/cli.cpp`
+- [x] Show available commands and basic usage
+- [x] Integrate into main: no args → help, `--help` → help
 - **Verification:** Running `chrona` or `chrona --help` shows usage, exits 0
 
 ### Step 7: Repository initialisation
